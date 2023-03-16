@@ -13,29 +13,14 @@ def parallel_processing(n, data):
     return output
 
 def main():
-    input_type = input()
-    raise Exception(input_type)
-    if "F" in input_type:
-        filename = input()
-        if ".a" in filename:
-            return
-        if "tests/" not in filename:
-            filename = "tests/" + filename
-        if "tests/" in filename:
-            with open(filename) as f:
-                n = int(f.readline().strip().split()[0])
-                data = list(map(int, f.readline().strip().split()))
-                result = parallel_processing(n, data)
-
-    elif "I" in input_type:
-        n = int(input().split()[0])
-        data = list(map(int, input().split()))
-        result = parallel_processing(n, data)
+    def main():
+    n = int(input().split()[0])
+    data = list(map(int, input().split()))
 
     result = parallel_processing(n, data)
 
     for i, j in result:
-        print(i, j)
+        print(i,j)
 
 
 
