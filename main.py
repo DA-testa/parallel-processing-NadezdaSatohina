@@ -14,7 +14,7 @@ def parallel_processing(n, data):
 
 def main():
     input_type = input()
-
+    Exception(input_type)
     if "F" in input_type:
         filename = input()
         if ".a" in filename:
