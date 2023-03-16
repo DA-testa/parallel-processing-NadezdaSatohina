@@ -13,7 +13,6 @@ def parallel_processing(n, data):
     return output
 
 def main():
-    def main():
     n = int(input().split()[0])
     data = list(map(int, input().split()))
 
